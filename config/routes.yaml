@@ -1,0 +1,109 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+Drivers:
+  path: /api/v1/drivers
+  controller: App\Controller\DriverController::getAll
+  methods:
+    - GET
+
+Driver:
+  path: /api/v1/driver/{id}
+  controller: App\Controller\DriverController::getOne
+  methods:
+    - GET
+
+DriverUpdate:
+  path: /api/v1/driver/{id}
+  controller: App\Controller\DriverController::update
+  methods:
+    - PUT
+
+DriverStore:
+  path: /api/v1/driver
+  controller: App\Controller\DriverController::store
+  methods:
+    - POST
+
+DriverDelete:
+  path: /api/v1/driver/{id}
+  controller: App\Controller\DriverController::delete
+  methods:
+    - DELETE
+
+DriverTeam:
+  path: /api/v1/team/{teamId}/drivers
+  controller: App\Controller\DriverController::getDriverTeam
+  methods:
+    - GET
+
+#Team Routes:
+
+Teams:
+  path: /api/v1/teams
+  controller: App\Controller\TeamController::getAll
+  methods:
+    - GET
+
+Team:
+  path: /api/v1/team/{id}
+  controller: App\Controller\TeamController::getOne
+  methods:
+    - GET
+
+TeamUpdate:
+  path: /api/v1/team/{id}
+  controller: App\Controller\TeamController::update
+  methods:
+    - PUT
+
+TeamStore:
+  path: /api/v1/team
+  controller: App\Controller\TeamController::store
+  methods:
+    - POST
+
+TeamDelete:
+  path: /api/v1/team/{id}
+  controller: App\Controller\TeamController::delete
+  methods:
+    - DELETE
+
+#Circuit Routes:
+
+Circuits:
+  path: /api/v1/circuits
+  controller: App\Controller\CircuitController::getAll
+  methods:
+    - GET
+
+Circuit:
+  path: /api/v1/circuit/{id}
+  controller: App\Controller\CircuitController::getOne
+  methods:
+    - GET
+
+CircuitUpdate:
+  path: /api/v1/circuit/{id}
+  controller: App\Controller\CircuitController::update
+  methods:
+    - PUT
+
+CircuitStore:
+  path: /api/v1/circuit
+  controller: App\Controller\CircuitController::store
+  methods:
+    - POST
+
+CircuitDelete:
+  path: /api/v1/circuit/{id}
+  controller: App\Controller\CircuitController::delete
+  methods:
+    - DELETE
+
+Welcome:
+  path: /api/v1/
+  controller: App\Controller\DriverController::welcome
+  methods:
+    - GET
