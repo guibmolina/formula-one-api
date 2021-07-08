@@ -4,10 +4,6 @@ Com essa API é possível adicionar/buscar/deletar/atualizar:  pilotos, equipes 
 
 ## Instalação
 
-Essa API está disponível em : 
-[https://limitless-shore-62051.herokuapp.com/api/v1/
-](https://limitless-shore-62051.herokuapp.com/api/v1/)
-
 Para instalar no seu ambiente local lembre-se de parametrizar o seu banco de dados no .env com base no .env.example, e depois rodar:
 
 ```bash
